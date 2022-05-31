@@ -16,3 +16,20 @@ function temp(text1 = "it's cold", text2 = "it's warm") {
 }
 console.log(temp());
 // console.log(temp("es ist kalt", "es ist warm"));
+
+console.log("FIRST exercise ended");
+// ex 2 | Highest value in an array
+// Create a program to find the highest value in an array.
+
+// E.g. If we have the following values 1, 7, -3, 9 we should only get the highest value, number 9.
+
+const arrayValue = [1, 7, -3, 9];
+console.log(Math.max(...arrayValue));
+console.log("Ex 2 Version 1");
+const maxNumber = Math.max(...arrayValue);
+console.log(maxNumber);
+console.log("Ex 2 Version 2");
+
+console.log("SECOND exercise ended");
+// ex 3 | Temperature v2.0
+// Now when you have program Temperature v1.0 done it time to upgrade it to the version 2.0. Now you should create a nice looking responsive front-end for your program (mobile friendly) and create more messages (e.g. if the temperature is above 32c output "The weather is hot" etc.) and you should display a proper image for the current weather condition.
