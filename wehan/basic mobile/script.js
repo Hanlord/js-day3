@@ -1,19 +1,3 @@
-// function temp(){
-//     let random = Math.floor(Math.random()*46)-5;
-//     console.log(random)
-//     if(random<10){
-//         let selector = document.getElementByClassName("img")
-//         console.log("The Weather is cold")
-//     }else{
-//         console.log("The Weather is moderate")
-//     }if(random>32){
-//         console.log("The Weather is hot")
-//     }
-    
-    
-// }
-// temp()
-
 
 function temp(){
     var random = Math.floor(Math.random()*46)-5;
