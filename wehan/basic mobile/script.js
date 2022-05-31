@@ -10,7 +10,8 @@ switch (true){
         title= "cold";
         image.src ="snow.jpg";
         weather.style.color="blue";
-        console.log(title);
+        document.write(title,random);
+        // return `<br> ${temp}c <br> The weather is cold`;
         break;
 
 
