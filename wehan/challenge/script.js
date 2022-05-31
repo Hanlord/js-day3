@@ -25,5 +25,6 @@ console.log(student,points)
         } 
       }
       
+document.write(student,points,check) //help!
       
       
