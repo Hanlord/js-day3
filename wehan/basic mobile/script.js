@@ -12,6 +12,7 @@ switch (true){
         weather.style.color="blue";
         document.write(title,random);
         // return `<br> ${temp}c <br> The weather is cold`;
+        //how to output right in switch?
         break;
 
 
