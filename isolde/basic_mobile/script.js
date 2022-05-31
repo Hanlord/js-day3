@@ -1,16 +1,30 @@
 function temp() {
-    let temp = Math.floor(Math.random()*46)-5;
+    let temp = Math.floor(Math.random() * 46) - 5;
     console.log(temp + "c");
     let image = document.querySelector("img");
     image.setAttribute("style", "height: 50vh;")
     console.log(image);
 
-    
+
     if (temp < 10) {
         image.setAttribute("src", "https://images.unsplash.com/photo-1457269449834-928af64c684d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+
+        // alternatively to setAttribute you can simply use:
+        //image.src ="";
+
+        //     Serri's solution: import card from Bootstrap and return everything you need inside:
+        //     document.getElementById("demo").innerHTML = `<div class="card" style="width: 18rem;">
+        //     <img src="..." class="card-img-top" alt="...">
+        //     <div class="card-body">
+        //       <h5 class="card-title">Weather is cold</h5>
+        //       <p class="card-text">some text.</p>
+        //       <a href="#" class="btn btn-primary">Go somewhere</a>
+        //     </div>
+        //   </div>`;
+
         // image.setAttribute("class", "opacity width");
         return `<br> ${temp}c <br> The weather is cold`;
-    } else if ( temp < 32) {
+    } else if (temp < 32) {
         image.setAttribute("src", "https://images.unsplash.com/photo-1583878594798-c31409c8ab4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
         return `<br> ${temp}c <br> The weather is moderate`;
     }
@@ -18,9 +32,9 @@ function temp() {
         image.setAttribute("src", "https://images.unsplash.com/photo-1533324268742-60b233802eef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
         return `<br> ${temp}c <br> The weather is hot`;
     }
-    }
-    
-    document.write(temp());
+}
+
+document.write(temp());
 
 // function temp2() {
 // let temp = Math.floor(Math.random()*46)-5;
