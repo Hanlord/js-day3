@@ -1,3 +1,25 @@
+let Martin = 76,
+    Thomas = 85,
+    Klaus = 65,
+    Maria = 93,
+    David = 81;
+
+const grades = [Martin, Thomas, Klaus, Maria, David];
+const students = ["Martin", "Thomas", "Klaus", "Maria", "David"];
+let sum = 0;
+
+
+for (let i = 0; i < students.length; i++) {
+    console.log(students[i]);
+    calcGrade(grades[i]);
+
+    sum += grades[i];
+   
+
+}
+var averagePts = sum/students.length;
+
+
 function calcGrade(grade) {
 
     switch (true) {
@@ -27,17 +49,7 @@ function calcGrade(grade) {
 
 // could use return instead of console.log inside the switch statement
 
-let Martin = 76,
-    Thomas = 85,
-    Klaus = 65,
-    Maria = 93,
-    David = 81;
 
-const grades = [Martin, Thomas, Klaus, Maria, David];
-const students = ["Martin", "Thomas", "Klaus", "Maria", "David"];
+// console.log(`Average points is: ${averagePts} and average grade is ${calcGrade(90)}`);
+console.log("Average points is: " + averagePts + " and average grade is " + calcGrade(90));
 
-for (let i = 0; i < students.length; i++) {
-    console.log(students[i]);
-    calcGrade(grades[i]) ;
-    
-}
