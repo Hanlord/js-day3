@@ -17,7 +17,7 @@ for (let i = 0; i < students.length; i++) {
 
 
 let average=sum/students.length;
-console.log(`the average is ${average} and it is a ${calcGrade(average)}`);
+console.log(`the average is ${average} and it is a ${calcGrade(average)}`); //wrong console output! why?
 
 
 function calcGrade(grade) {
