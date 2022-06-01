@@ -1,3 +1,29 @@
+function calcGrade(grade) {
+let title;
+
+    switch (true) {
+        case grade < 60:
+            title = "F";
+            return title;
+        case grade < 70:
+            title = "D";
+            return title;
+        case grade < 80:
+            title = "C";
+            return title;
+        case grade < 90:
+            title = "B";
+            return title;
+        case grade < 100:
+            title = "A";
+            return title;
+    }
+
+}
+
+
+// could use return instead of console.log inside the switch statement
+
 let Martin = 76,
     Thomas = 85,
     Klaus = 65,
@@ -11,45 +37,48 @@ let sum = 0;
 
 for (let i = 0; i < students.length; i++) {
     console.log(students[i]);
-    calcGrade(grades[i]);
+    console.log(calcGrade(grades[i]));
 
     sum += grades[i];
-   
-
 }
 var averagePts = sum/students.length;
+console.log(`Average points: ${averagePts}`);
+
+console.warn(calcGrade(80))
+console.log(`Average points is: ${averagePts} and average grade is ${calcGrade(averagePts)}`);
 
 
-function calcGrade(grade) {
 
-    switch (true) {
-        case grade < 60:
-            title = "F";
-            console.log(title);
-            break;
-        case grade < 70:
-            title = "D";
-            console.log(title);
-            break;
-        case grade < 80:
-            title = "C";
-            console.log(title);
-            break;
-        case grade < 90:
-            title = "B";
-            console.log(title);
-            break;
-        case grade < 100:
-            title = "A";
-            console.log(title);
-            break;
-    }
+// fizzBuzz
 
+for (let i = 1; i <= 100; i++) {
+if (i % 3 == 0 && i % 5 == 0) {
+    console.log("FizzBuzz");
+} else if (i % 3 == 0) {
+    console.log("Fizz");
+} else if (i % 5 == 0) {
+    console.log("Buzz");
+} else {
+    console.log(i);
+}
 }
 
-// could use return instead of console.log inside the switch statement
+// star loop
+let stars = "";
 
 
-// console.log(`Average points is: ${averagePts} and average grade is ${calcGrade(90)}`);
-console.log("Average points is: " + averagePts + " and average grade is " + calcGrade(90));
+for (let i = 0; i < 6; i++) {
+    stars += "*";
+    console.log(stars);
+}
 
+// variant using while loop
+
+let dots = "";
+let i = 0;
+
+while (i < 6) {
+    dots += "°";
+    i++;
+    console.log(dots);
+}
